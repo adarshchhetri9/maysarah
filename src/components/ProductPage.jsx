@@ -1,5 +1,14 @@
 import React from "react";
-import { cart, MainProduct, heart, minus, plus, share, star } from "../assets";
+import {
+  cart,
+  MainProduct,
+  heart,
+  minus,
+  plus,
+  share,
+  star,
+  arrowdown,
+} from "../assets";
 import { subImg } from "../constants";
 
 const ProductPage = () => {
@@ -78,6 +87,11 @@ const ProductPage = () => {
           <div className="flex items-center justify-center text-white bg-black my-4 py-4 rounded-lg gap-3">
             <img src={cart} alt="cart" />
             <button className="">Checkout and pickup from store</button>
+          </div>
+
+          <div className="border border-gray-800 rounded-lg flex justify-between items-center p-4">
+            <h1>Product Description </h1>
+            <img src={arrowdown} className="h-5 w-5" alt="arrowdown" />
           </div>
         </div>
       </div>
